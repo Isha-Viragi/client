@@ -1,17 +1,13 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Box, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="bg-secondary text-light py-3 position-fixed bottom-0 w-100">
-        <Container>
-          <p className="m-0 text-center">
-            © {new Date().getFullYear()} The Cabinet. All rights reserved.
-          </p>
-        </Container>
-      </footer>
-    </>
+    <Box bg="gray.700" p={4} mt={4} textAlign="center">
+      <Text color="white">
+        © All rights reserved to The Cabinet {new Date().getFullYear()}
+      </Text>
+    </Box>
   );
 };
 
